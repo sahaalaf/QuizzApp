@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweathersans_regular"
+        android:text="Let's Play!"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/mcqsBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/curve_shape"
+        android:padding="20dp"
+        android:paddingEnd="200dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mcqs"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:text="MCQs"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mcqsBtn"
+        app:layout_constraintEnd_toEndOf="@+id/mcqsBtn"
+        app:layout_constraintStart_toStartOf="@+id/mcqsBtn"
+        app:layout_constraintTop_toTopOf="@+id/mcqsBtn"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/tfBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/curve_shape"
+        android:padding="15dp"
+        android:paddingEnd="195dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/mcqsBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mcqsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mcqsBtn"
+        app:srcCompat="@drawable/tf"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:text="True &amp; False"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfBtn"
+        app:layout_constraintEnd_toEndOf="@+id/tfBtn"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/tfBtn"
+        app:layout_constraintTop_toTopOf="@+id/tfBtn"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ratingBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/curve_shape"
+        android:padding="20dp"
+        android:paddingEnd="195dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/tfBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tfBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tfBtn"
+        app:srcCompat="@drawable/rating"
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        app:tint="#FDBF43" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:text="Rate My App"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBtn"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBtn"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="@+id/ratingBtn"
+        app:layout_constraintTop_toTopOf="@+id/ratingBtn"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
